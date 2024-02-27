@@ -1,0 +1,38 @@
+.unknown_container {
+    z-index: 1;
+    background-color: #f5f6f8;
+    padding: 50px;
+    margin: 50px auto;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.unknown_container_button {
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #ebebeb;
+    color: lightgray;
+    padding: 5px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    transition: all 0.2s;
+    text-align: center;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
+}
+
+.unknown_container_button:hover {
+    color: grey;
+    border: 1px solid dimgrey;
+}
+
