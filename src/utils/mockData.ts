@@ -1,6 +1,4 @@
-import { Data } from './types';
-
-export const mockData: Data = {
+export const mockData = {
     header: {
         ticker: '🇬🇧 Special offer + Free Delivery 2-4 days in UK',
         menu: [
@@ -47,6 +45,48 @@ export const mockData: Data = {
         description: {
             text: 'Introducing the New Tiny Phone 4G',
             image: '../src/assets/images/descriptions/descriptions-image.jpg',
+        },
+        infoBlock: {
+            title: 'Shipping & Returns',
+            blocks: [
+                {
+                    id: crypto.randomUUID(),
+                    title: {
+                        icon: '../src/assets/icons/main/delivery.svg',
+                        titleText: 'Free delivery in United Kingdom',
+                    },
+                    icons: [
+                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dhl.svg' },
+                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dpd.svg' },
+                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/fedex.svg' },
+                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/ups.svg' },
+                    ],
+                    description:
+                        'All purchases are shipped from our warehouse in United Kingdom and are ' +
+                        'fully insured with a tracking number. Tracked delivery between 2-4 days in ' +
+                        'United Kingdom + Free Delivery.',
+                },
+                {
+                    id: crypto.randomUUID(),
+                    title: {
+                        icon: '../src/assets/icons/main/warranty.svg',
+                        titleText: '3 years warranty',
+                    },
+                    description:
+                        'Our product is guaranteed for 3 years from the date of your purchase.\n' +
+                        'For more information, please contact our team.',
+                },
+                {
+                    id: crypto.randomUUID(),
+                    title: {
+                        icon: '../src/assets/icons/main/moneyback.svg',
+                        titleText: '100% money-back guarantee',
+                    },
+                    description:
+                        "If you're not satisfied with your purchase, we offer a 100% Money Back Guarantee.\n" +
+                        'No Questions Asked.',
+                },
+            ],
         },
     },
     footer: {

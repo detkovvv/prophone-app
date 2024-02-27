@@ -11,6 +11,7 @@ import { Data } from '../utils/types';
 
 export const App: FC = () => {
     const data: Data = mockData;
+
     return (
         <BrowserRouter>
             <ErrorBoundary
@@ -24,7 +25,7 @@ export const App: FC = () => {
                     <Route element={<Main />} path='/' />
                     <Route element={<UnknownPage />} path='/*' />
                 </Routes>
-                <Footer />
+                <Footer logo={data.logo} />
             </ErrorBoundary>
         </BrowserRouter>
     );

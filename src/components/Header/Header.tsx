@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 import style from './Header.module.css';
 import { Logo } from '../Logo/Logo';
+import { Menu } from '../Menu/Menu';
 
 export const Header: FC = ({ logo, header }) => {
     return (
@@ -9,7 +10,8 @@ export const Header: FC = ({ logo, header }) => {
                 <span className={style.text}>{header.ticker}</span>
             </div>
             <div className={style.head}>
-                <Logo logo={logo} />
+                <Logo src={logo} />
+                <Menu />
             </div>
         </header>
     );
