@@ -1,12 +1,18 @@
 @font-face {
   font-family: 'Gotham';
-  src: url('../src/assets/fonts');
+  src: url('../src/assets/fonts/Gotham/Gotham-Bold.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../src/assets/fonts/Gotham/Gotham-Light.otf');
+  font-weight: 200;
 }
 
 :root {
   font-family: Gotham, Montserat, sans-serif;
-
-
+  font-weight: 400;
 }
 
 /* Reset and base styles  */

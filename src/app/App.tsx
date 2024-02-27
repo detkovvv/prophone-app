@@ -6,8 +6,11 @@ import { UnknownPage } from '../components/unknownPage/UnknownPage';
 import { Main } from '../components/Main/Main';
 import { Header } from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
+import { mockData } from '../utils/mockData';
+import { Data } from '../utils/types';
 
 export const App: FC = () => {
+    const data: Data = mockData;
     return (
         <BrowserRouter>
             <ErrorBoundary
@@ -16,7 +19,7 @@ export const App: FC = () => {
                     location.reload();
                 }}
             >
-                <Header />
+                <Header logo={data.logo} header={data.header} />
                 <Routes>
                     <Route element={<Main />} path='/' />
                     <Route element={<UnknownPage />} path='/*' />
