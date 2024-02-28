@@ -9,10 +9,26 @@
   src: url('../src/assets/fonts/Gotham/Gotham-Light.otf');
   font-weight: 200;
 }
+@font-face {
+  font-family: 'Gotham';
+  src: url('../src/assets/fonts/Gotham/Gotham-Thinitalic.otf');
+  font-weight: 100;
+  font-style: italic;
+}
 
 :root {
   font-family: Gotham, Montserat, sans-serif;
   font-weight: 400;
+  font-size: 8px;
+  line-height: 1.2;
+
+  /*Colors*/
+  --white: #fff;
+  --black: #272727;
+  --purple: #918BE4;
+  --pink: #FF008A;
+  --darkpurple: #7B73E1;
+
 }
 
 /* Reset and base styles  */

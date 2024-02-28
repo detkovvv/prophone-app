@@ -8,7 +8,6 @@ export const mockData = {
             { id: crypto.randomUUID(), name: 'FAQs' },
         ],
     },
-    logo: '../src/assets/icons/logo.svg',
     main: {
         phones: [
             {

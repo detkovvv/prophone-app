@@ -7,10 +7,12 @@ import { Main } from '../components/Main/Main';
 import { Header } from '../components/Header/Header';
 import { Footer } from '../components/Footer/Footer';
 import { mockData } from '../utils/mockData';
-import { Data } from '../utils/types';
+import { DataType } from '../utils/types';
+import style from './App.module.css';
 
 export const App: FC = () => {
-    const data: Data = mockData;
+    const data: DataType = mockData;
+    const { header, main, footer } = data;
 
     return (
         <BrowserRouter>
@@ -20,12 +22,28 @@ export const App: FC = () => {
                     location.reload();
                 }}
             >
-                <Header logo={data.logo} header={data.header} />
-                <Routes>
-                    <Route element={<Main />} path='/' />
-                    <Route element={<UnknownPage />} path='/*' />
-                </Routes>
-                <Footer logo={data.logo} />
+                <div className={style.container}>
+                    <Header header={header} />
+                    <Routes>
+                        <Route
+                            element={
+                                <Main
+                                    phones={main.phones}
+                                    description={main.description}
+                                    infoBlock={main.infoBlock}
+                                />
+                            }
+                            path='/'
+                        />
+                        <Route element={<UnknownPage />} path='/*' />
+                    </Routes>
+                    <Footer
+                        policies={footer.policies}
+                        information={footer.information}
+                        buttonText={footer.button}
+                        copyright={footer.copyright}
+                    />
+                </div>
             </ErrorBoundary>
         </BrowserRouter>
     );
