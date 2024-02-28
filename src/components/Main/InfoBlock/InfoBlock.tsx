@@ -10,11 +10,11 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                 {blocks.map((block) => (
                     <div className={style.block} key={block.id}>
                         <div className={style.block_title}>
-                            <div>
+                            <div className={style.title}>
                                 <img src={block.title.icon} alt={block.title.icon} />
                                 <h3 className={style.block_title_text}>{block.title.titleText}</h3>
                             </div>
-                            <div className={style.vector_block}>
+                            <button className={style.vector_button}>
                                 <svg
                                     className={style.vector}
                                     width='10'
@@ -28,7 +28,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                         fill='#464646'
                                     />
                                 </svg>
-                            </div>
+                            </button>
                         </div>
                         {block?.icons && (
                             <div className={style.delivery_icons}>
