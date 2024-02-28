@@ -43,7 +43,7 @@ export const mockData = {
         ],
         description: {
             text: 'Introducing the New Tiny Phone 4G',
-            image: '../src/assets/images/descriptions/descriptions-image.jpg',
+            image: '../../src/assets/images/descriptions/descriptions-image.jpg',
         },
         infoBlock: {
             blocks: [

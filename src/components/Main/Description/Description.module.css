@@ -1,0 +1,19 @@
+.description {
+    padding: 20px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title_block{
+    width: 50%;
+}
+.title {
+    font-size: 2.5em;
+}
+
+.image_block {
+    border: 10px;
+}
+.image{
+    width: 100%;
+}
