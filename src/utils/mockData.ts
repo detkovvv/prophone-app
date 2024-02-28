@@ -46,7 +46,6 @@ export const mockData = {
             image: '../src/assets/images/descriptions/descriptions-image.jpg',
         },
         infoBlock: {
-            title: 'Shipping & Returns',
             blocks: [
                 {
                     id: crypto.randomUUID(),
@@ -54,16 +53,16 @@ export const mockData = {
                         icon: '../src/assets/icons/main/delivery.svg',
                         titleText: 'Free delivery in United Kingdom',
                     },
+                    description:
+                        'All purchases are shipped from our warehouse in United Kingdom and are ' +
+                        'fully insured with a tracking number. Tracked delivery between 2-4 days in ' +
+                        'United Kingdom + Free Delivery.',
                     icons: [
                         { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dhl.svg' },
                         { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dpd.svg' },
                         { id: crypto.randomUUID(), icon: '../src/assets/icons/main/fedex.svg' },
                         { id: crypto.randomUUID(), icon: '../src/assets/icons/main/ups.svg' },
                     ],
-                    description:
-                        'All purchases are shipped from our warehouse in United Kingdom and are ' +
-                        'fully insured with a tracking number. Tracked delivery between 2-4 days in ' +
-                        'United Kingdom + Free Delivery.',
                 },
                 {
                     id: crypto.randomUUID(),
@@ -86,6 +85,7 @@ export const mockData = {
                         'No Questions Asked.',
                 },
             ],
+            title: 'Shipping & Returns',
         },
     },
     footer: {

@@ -1,9 +1,19 @@
 .infoBlock{
-
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .infoBlock_title{}
 .blocks{}
 .block{}
 .block_title{}
 .block_title_text{}
+.vector_block{}
+.vector{}
 .delivery_icons{}
+.icon_block{}
+.icon{}
+.description{}
+.description_text{}
