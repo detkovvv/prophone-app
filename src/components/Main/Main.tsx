@@ -8,10 +8,9 @@ import { Description } from './Description/Description';
 export const Main: FC<MainType> = ({ phones, description, infoBlock }) => {
     const { blocks, title } = infoBlock;
     const { text, image } = description;
-
     return (
         <main className={style.main}>
-            <Slider phones={[...phones]} />
+            <Slider sliderItems={phones} />
             <Description text={text} src={image} />
             <InfoBlock blocks={blocks} title={title} />
         </main>
