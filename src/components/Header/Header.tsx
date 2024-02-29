@@ -18,7 +18,10 @@ export const Header: FC<HeaderType> = ({ ticker, menu }) => {
     };
 
     return (
-        <header className={style.header}>
+        <header
+            className={style.header}
+            style={{ backgroundColor: `${opened ? 'white' : 'transparent'}` }}
+        >
             <div className={style.running_text_container}>
                 <div className={style.running_text}>
                     <div className={style.country_flag}>

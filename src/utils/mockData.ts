@@ -18,7 +18,7 @@ export const mockData = {
                 backgroundColor: '#918BE4',
                 backgroundImage: '../../src/assets/images/main/logo-big.svg',
                 fill: '#7B73E1',
-                image: '../../src/assets/images/main/purple-phone.jpg',
+                image: '../../src/assets/images/main/purple-phone.png',
             },
             {
                 id: crypto.randomUUID(),
@@ -28,7 +28,7 @@ export const mockData = {
                 backgroundColor: '#36363E',
                 backgroundImage: '../../src/assets/images/main/logo-big.svg',
                 fill: '#313138',
-                image: '../../src/assets/images/main/darkgrey-phone.jpg',
+                image: '../../src/assets/images/main/darkgrey-phone.png',
             },
             {
                 id: crypto.randomUUID(),
@@ -38,7 +38,7 @@ export const mockData = {
                 backgroundColor: '#F49894',
                 backgroundImage: '../../src/assets/images/main/logo-big.svg',
                 fill: '#F58D88',
-                image: '../../src/assets/images/main/pink-phone.jpg',
+                image: '../../src/assets/images/main/pink-phone.png',
             },
         ],
         description: {

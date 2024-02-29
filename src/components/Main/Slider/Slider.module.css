@@ -1,19 +1,39 @@
-.slider{}
+.slider{
+    margin-top: -53px;
+}
 .slider_container{
+    padding: 73px 13px 60px 13px;
 }
 .slide{
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .title{
     font-size: 4em;
+    color: var(--white);
 }
 .description{
     font-size: 1.75em;
     font-style: italic;
+    color: var(--white);
 }
-.prices{}
-.new_price{}
-.old_price{}
+.prices{
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding:4px 15px;
+    width: 196px;
+}
+.new_price{
+    font-size: 3.75em;
+}
+.old_price{
+    font-size: 2em;
+    font-style: italic;
+}
 .img{
-    background-color: transparent;
+
 }

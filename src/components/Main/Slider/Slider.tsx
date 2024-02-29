@@ -9,14 +9,18 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                 <div
                     className={style.slider_container}
                     key={slide.id}
-                    style={{ backgroundColor: `${slide.fill}` }}
+                    style={{ backgroundColor: `${slide.backgroundColor}` }}
                 >
                     <div className={style.slide}>
                         <h1 className={style.title}> {slide.name}</h1>
                         <p className={style.description}>{slide.descriptions}</p>
                         <div className={style.prices}>
-                            <div className={style.new_price}>{slide.price.newPrice}</div>
-                            <div className={style.old_price}>{slide.price.oldPrice}</div>
+                            <div className={style.new_price} style={{ color: `${slide.fill}` }}>
+                                {slide.price.newPrice}
+                            </div>
+                            <div className={style.old_price} style={{ color: `${slide.fill}` }}>
+                                {slide.price.oldPrice}
+                            </div>
                         </div>
                         <img
                             className={style.img}
@@ -25,6 +29,22 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                             loading='lazy'
                         />
                     </div>
+                    <svg
+                        width='377'
+                        height='517'
+                        viewBox='0 0 377 517'
+                        fill='none'
+                        xmlns='http://www.w3.org/2000/svg'
+                    >
+                        <path
+                            d='M243.632 538.609H68.3701L243.632 273.579H418.895L243.632 538.609Z'
+                            fill={slide.fill}
+                        />
+                        <path
+                            d='M179.537 0H359.074L179.537 273.58H0L179.537 0Z'
+                            fill={slide.fill}
+                        />
+                    </svg>
                 </div>
             ))}
         </div>
