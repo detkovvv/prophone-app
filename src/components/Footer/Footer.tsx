@@ -4,10 +4,10 @@ import { Logo } from '../Logo/Logo';
 import { Link } from 'react-router-dom';
 import { FooterType } from '../../utils/types';
 
-export const Footer: FC<FooterType> = ({ logo, policies, information, buttonText, copyright }) => {
+export const Footer: FC<FooterType> = ({ policies, information, buttonText, copyright }) => {
     return (
         <footer className={style.footer}>
-            <Logo src={logo} fill={'var(--white)'} />
+            <Logo fill={'var(--white)'} />
             <div className={style.policies}>
                 <ul className={style.policies_list}>
                     {policies.map((policy) => (

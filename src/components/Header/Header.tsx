@@ -5,10 +5,18 @@ import { Menu } from '../Menu/Menu';
 import { HeaderType } from '../../utils/types';
 
 export const Header: FC<HeaderType> = ({ ticker, menu }) => {
+    const countryCode = ticker.substring(0, 4);
+    const text = ticker.substring(4);
+
     return (
         <header>
-            <div className={style.head_offer}>
-                <span className={style.text}>{ticker}</span>
+            <div className={style.running_text_container}>
+                <div className={style.country_flag}>
+                    <Flag code={countryCode} />
+                </div>
+                <div className={style.running_text}>
+                    <span>{text}</span>
+                </div>
             </div>
             <div className={style.head}>
                 <Logo fill={'var(--purple)'} />

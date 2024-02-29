@@ -23,7 +23,7 @@ export const App: FC = () => {
                 }}
             >
                 <div className={style.container}>
-                    <Header header={header} />
+                    <Header ticker={header.ticker} menu={header.menu} />
                     <Routes>
                         <Route
                             element={
@@ -40,7 +40,7 @@ export const App: FC = () => {
                     <Footer
                         policies={footer.policies}
                         information={footer.information}
-                        buttonText={footer.button}
+                        buttonText={footer.buttonText}
                         copyright={footer.copyright}
                     />
                 </div>

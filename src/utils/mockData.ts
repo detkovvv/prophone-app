@@ -120,7 +120,7 @@ export const mockData = {
             'account within three days. The service will renew every thirty days until cancelled. This campaign ' +
             'will expire on December 31 of this year. If you would like to participate without signing up ' +
             'for a three-day trial at Toolsandtoys, please email.',
-        button: 'Read less',
+        buttonText: 'Read less',
         copyright: '© 2023 WhaleCo Inc.',
     },
 };
