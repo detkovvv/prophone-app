@@ -1,6 +1,6 @@
 .header{
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
 }
 .running_text_container {
     padding: 7px 9px 8px 9px;
