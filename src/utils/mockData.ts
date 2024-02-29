@@ -1,6 +1,6 @@
 export const mockData = {
     header: {
-        ticker: '🇬🇧 Special offer + Free Delivery 2-4 days in UK',
+        ticker: 'GB Special offer + Free Delivery 2-4 days in UK',
         menu: [
             { id: crypto.randomUUID(), name: 'Go to product page' },
             { id: crypto.randomUUID(), name: 'Track your order' },

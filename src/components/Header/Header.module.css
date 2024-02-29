@@ -1,5 +1,44 @@
-.running_text_container{}
-.country_flag{}
-.running_text{}
-.text{}
-.head{}
+.header{
+    width: 100%;
+    background-color: transparent;
+}
+.running_text_container {
+    padding: 7px 9px 8px 9px;
+    background-color: var(--pink);
+}
+.running_text {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: running_text 10s linear infinite;
+}
+
+@keyframes running_text {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.country_flag {
+    width: 1.75em;
+    height: 1.75em;
+    padding-top: 2px;
+}
+
+
+.text {
+    font-size: 1.75em;
+    color: var(--white);
+    font-weight: 700;
+}
+.menu_icon{
+
+}
+.head {
+    padding: 14px 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_button{
+    background: transparent;
+}

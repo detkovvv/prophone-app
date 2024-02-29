@@ -1,0 +1,19 @@
+.slider{}
+.slider_container{
+}
+.slide{
+
+}
+.title{
+    font-size: 4em;
+}
+.description{
+    font-size: 1.75em;
+    font-style: italic;
+}
+.prices{}
+.new_price{}
+.old_price{}
+.img{
+    background-color: transparent;
+}

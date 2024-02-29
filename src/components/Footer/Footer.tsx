@@ -8,7 +8,7 @@ export const Footer: FC<FooterType> = ({ policies, information, buttonText, copy
     return (
         <footer className={style.footer}>
             <Logo fill={'var(--white)'} />
-            <div className={style.policies}>
+            <div>
                 <ul className={style.policies_list}>
                     {policies.map((policy) => (
                         <li key={policy.id}>
@@ -19,7 +19,7 @@ export const Footer: FC<FooterType> = ({ policies, information, buttonText, copy
                     ))}
                 </ul>
             </div>
-            <div className={style.information}>
+            <div>
                 <p className={style.information_text}>{information}</p>
             </div>
             <div className={style.button_container}>
