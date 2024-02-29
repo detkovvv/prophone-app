@@ -1,6 +1,6 @@
 .menu_container {
     position: relative;
-
+    z-index: 11;
 }
 .menu_items {
     position: absolute;
@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 33px;
     transition: right 0.3s ease;
+
 }
 
 .menu_item {
