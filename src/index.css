@@ -123,3 +123,17 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: var(--white);
+  align-self: center;
+}
+
+.swiper-pagination-bullet-active {
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+}
+

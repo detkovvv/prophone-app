@@ -1,9 +1,9 @@
 import { type FC } from 'react';
 import { PhonesType } from '../../../utils/types';
+import 'swiper/swiper-bundle.css';
 import style from './Slider.module.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-import 'swiper/swiper-bundle.css';
 
 export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
     return (
@@ -11,9 +11,10 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
             <Swiper
                 modules={[Pagination]}
                 spaceBetween={0}
-                slidesPerView={1}
+                slidesPerView={0.88}
                 speed={100}
                 width={390}
+                loop={true}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
                 pagination={{ clickable: true }}
