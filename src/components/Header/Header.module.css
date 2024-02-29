@@ -1,6 +1,8 @@
 .header{
     width: 100%;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
 }
 .running_text_container {
     padding: 7px 9px 8px 9px;
@@ -36,8 +38,10 @@
 }
 .head {
     padding: 14px 13px;
+    max-width: 390px;
     display: flex;
     justify-content: space-between;
+
 }
 .menu_button{
     background: transparent;
