@@ -53,8 +53,7 @@ export const mockData = {
                         icon: '/prophone-app/icons/main/delivery.svg',
                         titleText: 'Free delivery in United Kingdom',
                     },
-                    description:
-                        'All purchases are shipped from our warehouse in United Kingdom and are ' +
+                    description: 'All purchases are shipped from our warehouse in United Kingdom and are ' +
                         'fully insured with a tracking number. Tracked delivery between 2-4 days in ' +
                         'United Kingdom + Free Delivery.',
                     icons: [
@@ -70,8 +69,7 @@ export const mockData = {
                         icon: '/prophone-app/icons/main/warranty.svg',
                         titleText: '3 years warranty',
                     },
-                    description:
-                        'Our product is guaranteed for 3 years from the date of your purchase.\n' +
+                    description: 'Our product is guaranteed for 3 years from the date of your purchase.\n' +
                         'For more information, please contact our team.',
                 },
                 {
@@ -80,8 +78,7 @@ export const mockData = {
                         icon: '/prophone-app/icons/main/moneyback.svg',
                         titleText: '100% money-back guarantee',
                     },
-                    description:
-                        "If you're not satisfied with your purchase, we offer a 100% Money Back Guarantee.\n" +
+                    description: "If you're not satisfied with your purchase, we offer a 100% Money Back Guarantee.\n" +
                         'No Questions Asked.',
                 },
             ],
@@ -94,8 +91,7 @@ export const mockData = {
             { id: crypto.randomUUID(), name: 'Terms and conditions' },
             { id: crypto.randomUUID(), name: 'Cookies' },
         ],
-        information:
-            '*Information is not a public offer\n' +
+        information: '*Information is not a public offer\n' +
             'This site is not part of the Facebook or Facebook Inc. ' +
             'website. Also, this site is not endorsed by Facebook ' +
             'in any way FACEBOOK is a trademark of FACEBOOK, Inc. Facebook' +

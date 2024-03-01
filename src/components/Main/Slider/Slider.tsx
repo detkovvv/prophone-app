@@ -7,7 +7,7 @@ import { Pagination } from 'swiper/modules';
 
 export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
     return (
-        <div className={style.slider}>
+        <section className={style.slider}>
             <Swiper
                 modules={[Pagination]}
                 spaceBetween={0}
@@ -69,6 +69,6 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                     </SwiperSlide>
                 ))}
             </Swiper>
-        </div>
+        </section>
     );
 };

@@ -15,7 +15,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
     };
 
     return (
-        <div className={style.infoBlock}>
+        <section className={style.infoBlock}>
             <h2 className={style.infoBlock_title}>{title}</h2>
             <div className={style.blocks}>
                 {blocks.map((block, index) => (
@@ -63,6 +63,6 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };

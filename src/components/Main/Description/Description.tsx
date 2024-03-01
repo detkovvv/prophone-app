@@ -4,7 +4,7 @@ import style from './Description.module.css';
 
 export const Description: FC<{ description: DescriptionType }> = ({ description }) => {
     return (
-        <div className={style.description}>
+        <section className={style.description}>
             <div className={style.title_block}>
                 <h2 className={style.title}>{description.text}</h2>
             </div>
@@ -16,6 +16,6 @@ export const Description: FC<{ description: DescriptionType }> = ({ description 
                     loading='lazy'
                 />
             </div>
-        </div>
+        </section>
     );
 };

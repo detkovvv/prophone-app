@@ -38,6 +38,7 @@
 .button {
     background-color: inherit;
     border: 1px solid var(--white);
+
     border-radius: 30px;
     padding: 6px 18px;
     color: var(--white);
@@ -45,7 +46,8 @@
     font-style: italic;
 }
 .button:hover {
-    border: 2px solid var(--white);
+    outline:2px solid var(--white);
+    outline-offset:-2px;
 }
 
 .copyright {
