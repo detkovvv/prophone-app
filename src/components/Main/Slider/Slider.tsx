@@ -12,6 +12,7 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                 modules={[Pagination]}
                 spaceBetween={0}
                 slidesPerView={1}
+                centeredSlides={true}
                 speed={100}
                 width={390}
                 loop={true}

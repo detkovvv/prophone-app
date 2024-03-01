@@ -1,21 +1,24 @@
-.infoBlock{
+.infoBlock {
     padding: 20px 13px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.infoBlock_title{
+
+.infoBlock_title {
     margin-top: 20px;
     font-size: 2.5em;
     font-weight: 400;
 }
-.blocks{
+
+.blocks {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
-.block{
+
+.block {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -23,34 +26,43 @@
     background-color: var(--grey);
     border-radius: 10px;
 }
-.block_title{
+
+.block_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.title{
+
+.title {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.block_title_text{
+
+.block_title_text {
     color: var(--pink);
     font-size: 1.75em;
 }
-.vector_button{
+
+.button_opened {
     transform: rotate(-90deg);
+    width: 14px;
+    height: 14px;
 }
-.vector{}
-.delivery_icons{
+
+.button_closed {
+    transform: rotate(90deg);
+    width: 14px;
+    height: 14px;
+}
+
+.delivery_icons {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.icon_block{}
-.icon{}
-.description{
-}
-.description_text{
+
+.description_text {
     font-size: 1.5em;
     font-weight: 100;
     font-style: italic;

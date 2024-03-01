@@ -1,25 +1,34 @@
-import { type FC } from 'react';
+import { type FC, useState } from 'react';
 import { InfoBlockType } from '../../../utils/types';
 import style from './InfoBlock.module.css';
 
 export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
+    const [openedIndex, setOpenedIndex] = useState<number | null>(null);
+
+    const toggleBlock = (index: number) => {
+        setOpenedIndex(openedIndex === index ? null : index);
+    };
+
     return (
         <div className={style.infoBlock}>
             <h2 className={style.infoBlock_title}>{title}</h2>
             <div className={style.blocks}>
-                {blocks.map((block) => (
+                {blocks.map((block, index) => (
                     <div className={style.block} key={block.id}>
                         <div className={style.block_title}>
                             <div className={style.title}>
                                 <img src={block.title.icon} alt={block.title.icon} />
                                 <h3 className={style.block_title_text}>{block.title.titleText}</h3>
                             </div>
-                            <button className={style.vector_button}>
+                            <button
+                                className={`${openedIndex === index ? style.button_opened : style.button_closed}`}
+                                onClick={() => toggleBlock(index)}
+                            >
                                 <svg
                                     className={style.vector}
-                                    width='10'
-                                    height='18'
-                                    viewBox='0 0 10 18'
+                                    width='14'
+                                    height='14'
+                                    viewBox='0 0 14 18'
                                     fill='none'
                                     xmlns='http://www.w3.org/2000/svg'
                                 >
@@ -30,22 +39,22 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                 </svg>
                             </button>
                         </div>
-                        {block?.icons && (
-                            <div className={style.delivery_icons}>
-                                {block?.icons.map((icon) => (
-                                    <div className={style.icon_block} key={icon.id}>
-                                        <img
-                                            className={style.icon}
-                                            src={icon.icon}
-                                            alt={icon.icon}
-                                        />
+                        {openedIndex === index && (
+                            <div>
+                                {block?.icons && (
+                                    <div className={style.delivery_icons}>
+                                        {block?.icons.map((icon) => (
+                                            <div key={icon.id}>
+                                                <img src={icon.icon} alt={icon.icon} />
+                                            </div>
+                                        ))}
                                     </div>
-                                ))}
+                                )}
+                                <div>
+                                    <p className={style.description_text}>{block.description}</p>
+                                </div>
                             </div>
                         )}
-                        <div className={style.description}>
-                            <p className={style.description_text}>{block.description}</p>
-                        </div>
                     </div>
                 ))}
             </div>

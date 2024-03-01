@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 33px;
     transition: right 0.3s ease;
+    height: 765px;
 
 }
 

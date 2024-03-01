@@ -1,7 +1,7 @@
 import { type FC, useState } from 'react';
 import style from './Header.module.css';
 import { Logo } from '../Logo/Logo';
-import { Menu } from '../Menu/Menu';
+import { Menu } from './Menu/Menu';
 import { HeaderType } from '../../utils/types';
 
 export const Header: FC<HeaderType> = ({ ticker, menu }) => {

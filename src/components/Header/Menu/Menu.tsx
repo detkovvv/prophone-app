@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import { MenuType } from '../../utils/types';
+import { MenuType } from '../../../utils/types';
 import { Link } from 'react-router-dom';
 import style from './Menu.module.css';
 
