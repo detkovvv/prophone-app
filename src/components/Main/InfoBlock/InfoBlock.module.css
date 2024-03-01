@@ -67,3 +67,7 @@
     font-weight: 100;
     font-style: italic;
 }
+.description_text span{
+    font-style: normal;
+    font-weight: 700;
+}

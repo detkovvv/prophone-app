@@ -37,12 +37,7 @@ export const App: FC = () => {
                         />
                         <Route element={<UnknownPage />} path='/*' />
                     </Routes>
-                    <Footer
-                        policies={footer.policies}
-                        information={footer.information}
-                        buttonText={footer.buttonText}
-                        copyright={footer.copyright}
-                    />
+                    <Footer policies={footer.policies} />
                 </div>
             </ErrorBoundary>
         </BrowserRouter>

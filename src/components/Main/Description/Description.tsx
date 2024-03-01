@@ -3,16 +3,13 @@ import { DescriptionType } from '../../../utils/types';
 import style from './Description.module.css';
 
 export const Description: FC<{ description: DescriptionType }> = ({ description }) => {
-    const purpleText = description.text.split(' ').slice(3).join(' ');
-    const blackText = description.text.split(' ').slice(0, 3).join(' ');
-
-    console.log(purpleText);
-    console.log(blackText);
-
     return (
         <section className={style.description}>
             <div className={style.title_block}>
-                <h2 className={style.title}>{description.text}</h2>
+                <h2
+                    className={style.title}
+                    dangerouslySetInnerHTML={{ __html: description.text }}
+                />
             </div>
             <div className={style.image_block}>
                 <img

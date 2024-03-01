@@ -56,7 +56,10 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                     </div>
                                 )}
                                 <div>
-                                    <p className={style.description_text}>{block.description}</p>
+                                    <p
+                                        className={style.description_text}
+                                        dangerouslySetInnerHTML={{ __html: block.description }}
+                                    />
                                 </div>
                             </div>
                         )}

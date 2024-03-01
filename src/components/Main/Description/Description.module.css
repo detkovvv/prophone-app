@@ -10,6 +10,9 @@
 .title {
     font-size: 2.5em;
 }
+.title span {
+    color: var(--purple);
+}
 
 .image_block {
     border: 10px;
