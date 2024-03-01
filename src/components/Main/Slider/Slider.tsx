@@ -16,8 +16,6 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                 speed={100}
                 width={390}
                 loop={true}
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={(swiper) => console.log(swiper)}
                 pagination={{ clickable: true }}
             >
                 {sliderItems.map((slide) => (

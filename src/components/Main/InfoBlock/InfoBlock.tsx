@@ -3,10 +3,15 @@ import { InfoBlockType } from '../../../utils/types';
 import style from './InfoBlock.module.css';
 
 export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
-    const [openedIndex, setOpenedIndex] = useState<number | null>(null);
+    const [openedIndexes, setOpenedIndexes] = useState<number[]>([]);
 
     const toggleBlock = (index: number) => {
-        setOpenedIndex(openedIndex === index ? null : index);
+        const isOpened = openedIndexes.includes(index);
+        if (isOpened) {
+            setOpenedIndexes(openedIndexes.filter((i) => i !== index));
+        } else {
+            setOpenedIndexes([...openedIndexes, index]);
+        }
     };
 
     return (
@@ -21,7 +26,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                 <h3 className={style.block_title_text}>{block.title.titleText}</h3>
                             </div>
                             <button
-                                className={`${openedIndex === index ? style.button_opened : style.button_closed}`}
+                                className={`${openedIndexes.includes(index) ? style.button_opened : style.button_closed}`}
                                 onClick={() => toggleBlock(index)}
                             >
                                 <svg
@@ -39,7 +44,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                 </svg>
                             </button>
                         </div>
-                        {openedIndex === index && (
+                        {openedIndexes.includes(index) && (
                             <div>
                                 {block?.icons && (
                                     <div className={style.delivery_icons}>
