@@ -1,7 +1,7 @@
 {
   "name": "prophone-app",
   "author": "Vasiliy Detkov",
-  "homepage": "https://detkovvv.github.io/prophone-app/",
+  "homepage": "/prophone-app/",
   "private": true,
   "version": "0.1.0",
   "type": "module",

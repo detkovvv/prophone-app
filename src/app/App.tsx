@@ -15,7 +15,7 @@ export const App: FC = () => {
     const { header, main, footer } = data;
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.PROD ? '/prophone-app' : undefined}>
             <ErrorBoundary
                 FallbackComponent={FallbackComponent}
                 onReset={() => {
