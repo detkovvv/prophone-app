@@ -8,6 +8,7 @@
 .running_text_container {
     padding: 7px 9px 8px 9px;
     background-color: var(--pink);
+    min-width: 390px;
 }
 .running_text {
     display: flex;
