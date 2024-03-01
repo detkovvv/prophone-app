@@ -8,7 +8,6 @@
 .running_text_container {
     padding: 7px 9px 8px 9px;
     background-color: var(--pink);
-    min-width: 390px;
 }
 .running_text {
     display: flex;
@@ -17,6 +16,7 @@
     overflow: hidden;
     white-space: nowrap;
     animation: running_text 8s linear infinite;
+    min-width: 390px;
 }
 
 @keyframes running_text {
