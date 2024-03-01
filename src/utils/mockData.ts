@@ -16,9 +16,9 @@ export const mockData = {
                 descriptions: 'Small Size, Huge Impact',
                 price: { oldPrice: '£ 59.00', newPrice: '£ 3.00' },
                 backgroundColor: '#918BE4',
-                backgroundImage: '../../src/assets/images/main/logo-big.svg',
+                backgroundImage: './assets/images/main/logo-big.svg',
                 fill: '#7B73E1',
-                image: '../../src/assets/images/main/purple-phone.png',
+                image: './images/main/purple-phone.png',
             },
             {
                 id: crypto.randomUUID(),
@@ -26,9 +26,9 @@ export const mockData = {
                 descriptions: 'Small Size, Huge Impact',
                 price: { oldPrice: '£ 59.00', newPrice: '£ 3.00' },
                 backgroundColor: '#36363E',
-                backgroundImage: '../../src/assets/images/main/logo-big.svg',
+                backgroundImage: './assets/images/main/logo-big.svg',
                 fill: '#313138',
-                image: '../../src/assets/images/main/darkgrey-phone.png',
+                image: './images/main/darkgrey-phone.png',
             },
             {
                 id: crypto.randomUUID(),
@@ -36,21 +36,21 @@ export const mockData = {
                 descriptions: 'Small Size, Huge Impact',
                 price: { oldPrice: '£ 59.00', newPrice: '£ 3.00' },
                 backgroundColor: '#F49894',
-                backgroundImage: '../../src/assets/images/main/logo-big.svg',
+                backgroundImage: './images/main/logo-big.svg',
                 fill: '#F58D88',
-                image: '../../src/assets/images/main/pink-phone.png',
+                image: './images/main/pink-phone.png',
             },
         ],
         description: {
             text: 'Introducing the New Tiny Phone 4G',
-            image: '../../src/assets/images/descriptions/descriptions-image.jpg',
+            image: './images/descriptions/descriptions-image.jpg',
         },
         infoBlock: {
             blocks: [
                 {
                     id: crypto.randomUUID(),
                     title: {
-                        icon: '../src/assets/icons/main/delivery.svg',
+                        icon: './icons/main/delivery.svg',
                         titleText: 'Free delivery in United Kingdom',
                     },
                     description:
@@ -58,16 +58,16 @@ export const mockData = {
                         'fully insured with a tracking number. Tracked delivery between 2-4 days in ' +
                         'United Kingdom + Free Delivery.',
                     icons: [
-                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dhl.svg' },
-                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/dpd.svg' },
-                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/fedex.svg' },
-                        { id: crypto.randomUUID(), icon: '../src/assets/icons/main/ups.svg' },
+                        { id: crypto.randomUUID(), icon: './icons/main/dhl.svg' },
+                        { id: crypto.randomUUID(), icon: './icons/main/dpd.svg' },
+                        { id: crypto.randomUUID(), icon: './icons/main/fedex.svg' },
+                        { id: crypto.randomUUID(), icon: './icons/main/ups.svg' },
                     ],
                 },
                 {
                     id: crypto.randomUUID(),
                     title: {
-                        icon: '../src/assets/icons/main/warranty.svg',
+                        icon: './icons/main/warranty.svg',
                         titleText: '3 years warranty',
                     },
                     description:
@@ -77,7 +77,7 @@ export const mockData = {
                 {
                     id: crypto.randomUUID(),
                     title: {
-                        icon: '../src/assets/icons/main/moneyback.svg',
+                        icon: './icons/main/moneyback.svg',
                         titleText: '100% money-back guarantee',
                     },
                     description:

@@ -1,18 +1,18 @@
 @font-face {
     font-family: 'Gotham';
-    src: url('../src/assets/fonts/Gotham/Gotham-Bold.otf');
+    src: url('../public/fonts/Gotham/Gotham-Bold.otf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('../src/assets/fonts/Gotham/Gotham-Light.otf');
+    src: url('../public/fonts/Gotham/Gotham-Light.otf');
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'Gotham';
-    src: url('../src/assets/fonts/Gotham/Gotham-Thinitalic.otf');
+    src: url('../public/fonts/Gotham/Gotham-Thinitalic.otf');
     font-weight: 100;
     font-style: italic;
 }
