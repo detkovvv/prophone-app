@@ -38,6 +38,10 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                                         className={style.old_price}
                                         style={{ color: `${slide.backgroundColor}` }}
                                     >
+                                        <div
+                                            className={style.line}
+                                            style={{ backgroundColor: `${slide.backgroundColor}` }}
+                                        ></div>
                                         {slide.price.oldPrice}
                                     </div>
                                 </div>

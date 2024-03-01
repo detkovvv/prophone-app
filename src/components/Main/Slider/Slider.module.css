@@ -45,6 +45,16 @@
 .old_price {
     font-size: 2em;
     font-style: italic;
+    color: transparent;
+    position: relative;
+}
+.line {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 1px;
+    transform: rotate(-12deg);
 }
 
 .img {
