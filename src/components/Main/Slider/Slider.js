@@ -1,8 +1,0 @@
-import { jsxs as _jsxs, jsx as _jsx } from "react/jsx-runtime";
-import 'swiper/swiper-bundle.css';
-import style from './Slider.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-export const Slider = ({ sliderItems }) => {
-    return (_jsx("section", { className: style.slider, children: _jsx(Swiper, { modules: [Pagination], spaceBetween: 0, slidesPerView: 1, centeredSlides: true, speed: 100, width: 390, loop: true, pagination: { clickable: true }, children: sliderItems.map((slide) => (_jsx(SwiperSlide, { children: _jsx("div", { className: style.slider_container, style: { backgroundColor: `${slide.backgroundColor}` }, children: _jsxs("div", { className: style.slide, children: [_jsxs("h1", { className: style.title, children: [" ", slide.name] }), _jsx("p", { className: style.description, children: slide.descriptions }), _jsxs("div", { className: style.prices, children: [_jsx("div", { className: style.new_price, style: { color: `${slide.backgroundColor}` }, children: slide.price.newPrice }), _jsx("div", { className: style.old_price, style: { color: `${slide.backgroundColor}` }, children: slide.price.oldPrice })] }), _jsx("img", { className: style.img, src: slide.image, alt: slide.image, loading: 'lazy' }), _jsxs("svg", { className: style.big_logo, width: '420', height: '540', viewBox: '0 0 420 540', fill: 'none', xmlns: 'http://www.w3.org/2000/svg', children: [_jsx("path", { d: 'M243.632 538.609H68.3701L243.632 273.579H418.895L243.632 538.609Z', fill: slide.fill }), _jsx("path", { d: 'M179.537 0H359.074L179.537 273.58H0L179.537 0Z', fill: slide.fill })] })] }) }) }, slide.id))) }) }));
-};
