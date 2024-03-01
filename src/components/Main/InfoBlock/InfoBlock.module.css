@@ -48,12 +48,14 @@
     transform: rotate(-90deg);
     width: 14px;
     height: 14px;
+    background-color: transparent;
 }
 
 .button_closed {
     transform: rotate(90deg);
     width: 14px;
     height: 14px;
+    background-color: transparent;
 }
 
 .delivery_icons {
