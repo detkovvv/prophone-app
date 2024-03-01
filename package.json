@@ -1,11 +1,14 @@
 {
   "name": "prophone-app",
   "author": "Vasiliy Detkov",
+  "homepage": "https://detkovvv.github.io/prophone-app/",
   "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc && vite build",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
@@ -34,6 +37,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "prettier": "^3.2.5",
     "typescript": "^5.2.2",
     "vite": "^5.1.0",

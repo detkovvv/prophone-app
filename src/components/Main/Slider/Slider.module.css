@@ -5,10 +5,11 @@
 .slider_container {
     padding: 73px 13px 0 13px;
     height: 685px;
+    position: relative;
 }
 
 .slide {
-    position: relative;
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -52,6 +53,6 @@
 
 .big_logo {
     position: absolute;
-    left: 0;
+    left: 13px;
     bottom: -20px;
 }

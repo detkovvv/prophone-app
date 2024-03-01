@@ -49,9 +49,9 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                                 />
                                 <svg
                                     className={style.big_logo}
-                                    width='418.89'
-                                    height='538.61'
-                                    viewBox='0 0 418.89 538.61'
+                                    width='420'
+                                    height='540'
+                                    viewBox='0 0 420 540'
                                     fill='none'
                                     xmlns='http://www.w3.org/2000/svg'
                                 >
