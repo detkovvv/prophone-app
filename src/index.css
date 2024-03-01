@@ -26,11 +26,10 @@
     /*Colors*/
     --white: #fff;
     --black: #272727;
-    --purple: #918BE4;
-    --pink: #FF008A;
-    --darkpurple: #7B73E1;
+    --purple: #918be4;
+    --pink: #ff008a;
+    --darkpurple: #7b73e1;
     --grey: #f2f2f2;
-
 }
 
 /* Reset and base styles  */

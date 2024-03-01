@@ -1,4 +1,4 @@
-.header{
+.header {
     width: 100%;
     z-index: 9999;
     display: flex;
@@ -19,8 +19,12 @@
 }
 
 @keyframes running_text {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .country_flag {
     width: 1.75em;
@@ -28,14 +32,12 @@
     padding-top: 2px;
 }
 
-
 .text {
     font-size: 1.75em;
     color: var(--white);
     font-weight: 700;
 }
-.menu_icon{
-
+.menu_icon {
 }
 .head {
     padding: 14px 13px;
@@ -44,6 +46,6 @@
     width: 390px;
     margin: auto;
 }
-.menu_button{
+.menu_button {
     background: transparent;
 }
