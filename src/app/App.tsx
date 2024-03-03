@@ -1,14 +1,15 @@
 import { type FC } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import { FallbackComponent } from '../components/FallbackComponent/FallbackComponent';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { UnknownPage } from '../components/unknownPage/UnknownPage';
-import { Main } from '../components/Main/Main';
-import { Header } from '../components/Header/Header';
-import { Footer } from '../components/Footer/Footer';
-import { mockData } from '../utils/mockData';
-import { DataType } from '../utils/types';
+
 import style from './App.module.css';
+import { FallbackComponent } from '../components/FallbackComponent/FallbackComponent';
+import { Footer } from '../components/Footer/Footer';
+import { Header } from '../components/Header/Header';
+import { Main } from '../components/Main/Main';
+import { UnknownPage } from '../components/unknownPage/UnknownPage';
+import { mockData } from '../utils/mockData';
+import { type DataType } from '../utils/types';
 
 export const App: FC = () => {
     const data: DataType = mockData;
@@ -23,14 +24,14 @@ export const App: FC = () => {
                 }}
             >
                 <div className={style.container}>
-                    <Header ticker={header.ticker} menu={header.menu} />
+                    <Header menu={header.menu} ticker={header.ticker} />
                     <Routes>
                         <Route
                             element={
                                 <Main
-                                    phones={main.phones}
                                     description={main.description}
                                     infoBlock={main.infoBlock}
+                                    phones={main.phones}
                                 />
                             }
                             path='/'

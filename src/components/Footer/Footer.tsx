@@ -1,8 +1,9 @@
 import { type FC } from 'react';
-import style from './Footer.module.css';
-import { Logo } from '../Logo/Logo';
 import { Link } from 'react-router-dom';
-import { FooterType } from '../../utils/types';
+
+import style from './Footer.module.css';
+import { type FooterType } from '../../utils/types';
+import { Logo } from '../Logo/Logo';
 
 export const Footer: FC<FooterType> = ({ policies }) => {
     return (
@@ -26,6 +27,7 @@ export const Footer: FC<FooterType> = ({ policies }) => {
                     this site is not endorsed by Facebook in any way FACEBOOK is a trademark of
                     FACEBOOK, Inc. Facebook provides a platform for serving advertising, but the
                     opinions and/or views expressed on this website are not representative of
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     Facebook, Inc. Opinions and/or views expressed on our website's social media
                     platforms, including but not limited to our blogs and Facebook pages, represent
                     the thoughts of individual bloggers and online communities, and not necessarily
@@ -34,6 +36,7 @@ export const Footer: FC<FooterType> = ({ policies }) => {
                     expressed on these pages do not in any way reflect the opinions of the site on
                     which they are published, other sites affiliated with the site, the personnel
                     involved in the maintenance of the site or any member of the site. Any opinions
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     or views expressed on this website's social media platforms are not
                     representative of Facebook, Inc. Although our website makes reasonable efforts
                     to monitor and/or moderate content posted on its social media platforms, we do

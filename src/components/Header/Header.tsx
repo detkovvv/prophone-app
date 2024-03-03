@@ -1,8 +1,9 @@
 import { type FC, useState } from 'react';
+
 import style from './Header.module.css';
-import { Logo } from '../Logo/Logo';
 import { Menu } from './Menu/Menu';
-import { HeaderType } from '../../utils/types';
+import { type HeaderType } from '../../utils/types';
+import { Logo } from '../Logo/Logo';
 
 export const Header: FC<HeaderType> = ({ ticker, menu }) => {
     const unicode = ticker.substring(0, 2).toLowerCase();
@@ -26,9 +27,9 @@ export const Header: FC<HeaderType> = ({ ticker, menu }) => {
                 <div className={style.running_text}>
                     <div className={style.country_flag}>
                         <img
-                            src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${unicode}.svg`}
                             alt={unicode}
                             loading='lazy'
+                            src={`https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/4x3/${unicode}.svg`}
                         />
                     </div>
                     <span className={style.text}>{text}</span>
@@ -39,36 +40,36 @@ export const Header: FC<HeaderType> = ({ ticker, menu }) => {
                 <button className={style.menu_button} onClick={handleToggleMenu}>
                     {opened ? (
                         <svg
-                            width='11'
+                            fill='none'
                             height='12'
                             viewBox='0 0 11 12'
-                            fill='none'
+                            width='11'
                             xmlns='http://www.w3.org/2000/svg'
                         >
                             <rect
-                                x='1.22162'
-                                y='0.75'
-                                width='13.8287'
+                                fill='#0021A1'
                                 height='1.72859'
                                 transform='rotate(45 1.22162 0.75)'
-                                fill='#0021A1'
+                                width='13.8287'
+                                x='1.22162'
+                                y='0.75'
                             />
                             <rect
-                                x='10.999'
-                                y='1.97192'
-                                width='13.8287'
+                                fill='#0021A1'
                                 height='1.72859'
                                 transform='rotate(135 10.999 1.97192)'
-                                fill='#0021A1'
+                                width='13.8287'
+                                x='10.999'
+                                y='1.97192'
                             />
                         </svg>
                     ) : (
                         <svg
                             className={style.menu_icon}
-                            width='20'
+                            fill='none'
                             height='20'
                             viewBox='0 0 20 20'
-                            fill='none'
+                            width='20'
                             xmlns='http://www.w3.org/2000/svg'
                         >
                             <path

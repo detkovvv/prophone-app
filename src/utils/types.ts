@@ -1,4 +1,4 @@
-import { mockData } from './mockData';
+import { type mockData } from './mockData';
 
 export type DataType = typeof mockData;
 

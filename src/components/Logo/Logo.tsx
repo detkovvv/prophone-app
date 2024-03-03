@@ -1,6 +1,7 @@
 import { type FC } from 'react';
-import style from './Logo.module.css';
 import { Link } from 'react-router-dom';
+
+import style from './Logo.module.css';
 
 type LogoProps = {
     fill: string;
@@ -13,10 +14,10 @@ export const Logo: FC<LogoProps> = ({ fill }) => {
     return (
         <Link className={style.logo} to={'/'}>
             <svg
-                width='20'
+                fill='none'
                 height='25'
                 viewBox='0 0 20 25'
-                fill='none'
+                width='20'
                 xmlns='http://www.w3.org/2000/svg'
             >
                 <path

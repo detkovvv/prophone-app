@@ -1,22 +1,23 @@
 import { type FC } from 'react';
-import { PhonesType } from '../../../utils/types';
-import 'swiper/swiper-bundle.css';
-import style from './Slider.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import style from './Slider.module.css';
+import { type PhonesType } from '../../../utils/types';
+import 'swiper/swiper-bundle.css';
 
 export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
     return (
         <section className={style.slider}>
             <Swiper
-                modules={[Pagination]}
-                spaceBetween={0}
-                slidesPerView={1}
                 centeredSlides={true}
+                loop={true}
+                modules={[Pagination]}
+                pagination={{ clickable: true }}
+                slidesPerView={1}
+                spaceBetween={0}
                 speed={100}
                 width={390}
-                loop={true}
-                pagination={{ clickable: true }}
             >
                 {sliderItems.map((slide) => (
                     <SwiperSlide key={slide.id}>
@@ -41,22 +42,22 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                                         <div
                                             className={style.line}
                                             style={{ backgroundColor: `${slide.backgroundColor}` }}
-                                        ></div>
+                                        />
                                         {slide.price.oldPrice}
                                     </div>
                                 </div>
                                 <img
-                                    className={style.img}
-                                    src={slide.image}
                                     alt={slide.image}
+                                    className={style.img}
                                     loading='lazy'
+                                    src={slide.image}
                                 />
                                 <svg
                                     className={style.big_logo}
-                                    width='420'
+                                    fill='none'
                                     height='540'
                                     viewBox='0 0 420 540'
-                                    fill='none'
+                                    width='420'
                                     xmlns='http://www.w3.org/2000/svg'
                                 >
                                     <path

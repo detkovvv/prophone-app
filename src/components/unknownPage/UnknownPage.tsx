@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import { NavLink } from 'react-router-dom';
+
 import style from './unknownPage.module.css';
 
 export const UnknownPage: FC = () => {

@@ -81,7 +81,7 @@ export const mockData = {
                         titleText: '100% money-back guarantee',
                     },
                     description:
-                        "If you're not satisfied with your purchase, we offer a 100% Money Back Guarantee.<br><br>" +
+                        'If you\'re not satisfied with your purchase, we offer a 100% Money Back Guarantee.<br><br>' +
                         'No Questions Asked.',
                 },
             ],

@@ -1,6 +1,7 @@
 import { type FC, useState } from 'react';
-import { InfoBlockType } from '../../../utils/types';
+
 import style from './InfoBlock.module.css';
+import { type InfoBlockType } from '../../../utils/types';
 
 export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
     const [openedIndexes, setOpenedIndexes] = useState<number[]>([]);
@@ -22,7 +23,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                     <div className={style.block} key={block.id}>
                         <div className={style.block_title}>
                             <div className={style.title}>
-                                <img src={block.title.icon} alt={block.title.icon} />
+                                <img alt={block.title.icon} src={block.title.icon} />
                                 <h3 className={style.block_title_text}>{block.title.titleText}</h3>
                             </div>
                             <button
@@ -31,10 +32,10 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                             >
                                 <svg
                                     className={style.vector}
-                                    width='14'
+                                    fill='none'
                                     height='14'
                                     viewBox='0 0 14 18'
-                                    fill='none'
+                                    width='14'
                                     xmlns='http://www.w3.org/2000/svg'
                                 >
                                     <path
@@ -50,7 +51,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                                     <div className={style.delivery_icons}>
                                         {block?.icons.map((icon) => (
                                             <div key={icon.id}>
-                                                <img src={icon.icon} alt={icon.icon} />
+                                                <img alt={icon.icon} src={icon.icon} />
                                             </div>
                                         ))}
                                     </div>

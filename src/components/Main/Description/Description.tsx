@@ -1,6 +1,7 @@
 import { type FC } from 'react';
-import { DescriptionType } from '../../../utils/types';
+
 import style from './Description.module.css';
+import { type DescriptionType } from '../../../utils/types';
 
 export const Description: FC<{ description: DescriptionType }> = ({ description }) => {
     return (
@@ -13,10 +14,10 @@ export const Description: FC<{ description: DescriptionType }> = ({ description 
             </div>
             <div className={style.image_block}>
                 <img
-                    className={style.image}
-                    src={description.image}
                     alt={description.image}
+                    className={style.image}
                     loading='lazy'
+                    src={description.image}
                 />
             </div>
         </section>

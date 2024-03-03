@@ -1,7 +1,8 @@
 import { type FC } from 'react';
-import { MenuType } from '../../../utils/types';
 import { Link } from 'react-router-dom';
+
 import style from './Menu.module.css';
+import { type MenuType } from '../../../utils/types';
 
 type MenuComponentType = {
     menu: MenuType;
@@ -16,10 +17,10 @@ export const Menu: FC<MenuComponentType> = ({ menu, visible }) => {
                         <Link className={style.menu_item} to={'/'}>
                             <span className={style.item_name}>{item.name}</span>
                             <svg
-                                width='10'
+                                fill='none'
                                 height='18'
                                 viewBox='0 0 10 18'
-                                fill='none'
+                                width='10'
                                 xmlns='http://www.w3.org/2000/svg'
                             >
                                 <path
