@@ -1,9 +1,8 @@
 import { type FC } from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import style from './App.module.css';
-import { FallbackComponent } from '../components/FallbackComponent/FallbackComponent';
+import { ErrorBoundary } from '../components/ErrorBoundary/ErrorBoundary';
 import { Footer } from '../components/Footer/Footer';
 import { Header } from '../components/Header/Header';
 import { Main } from '../components/Main/Main';
@@ -17,12 +16,7 @@ export const App: FC = () => {
 
     return (
         <BrowserRouter basename={import.meta.env.PROD ? '/prophone-app' : undefined}>
-            <ErrorBoundary
-                FallbackComponent={FallbackComponent}
-                onReset={() => {
-                    location.reload();
-                }}
-            >
+            <ErrorBoundary>
                 <div className={style.container}>
                     <Header menu={header.menu} ticker={header.ticker} />
                     <Routes>
