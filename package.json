@@ -1,6 +1,7 @@
 {
   "name": "prophone-app",
   "author": "Vasiliy Detkov",
+  "homepage": "/prophone-app/",
   "version": "0.1.0",
   "type": "module",
   "scripts": {
