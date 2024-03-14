@@ -38,6 +38,11 @@
     align-items: center;
     gap: 6px;
 }
+.title img{
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1;
+}
 
 .block_title_text {
     color: var(--pink);
@@ -61,6 +66,7 @@
 .delivery_icons {
     display: flex;
     align-items: center;
+    height: 35px;
     gap: 20px;
 }
 

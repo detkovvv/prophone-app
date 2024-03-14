@@ -57,8 +57,11 @@
     transform: rotate(-12deg);
 }
 
-.img {
+.image {
     z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 0.9705;
 }
 
 .big_logo {

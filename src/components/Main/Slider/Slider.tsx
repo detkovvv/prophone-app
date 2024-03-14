@@ -48,7 +48,7 @@ export const Slider: FC<{ sliderItems: PhonesType }> = ({ sliderItems }) => {
                                 </div>
                                 <img
                                     alt={slide.image}
-                                    className={style.img}
+                                    className={style.image}
                                     loading='lazy'
                                     src={slide.image}
                                 />
