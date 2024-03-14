@@ -29,6 +29,7 @@ export const InfoBlock: FC<InfoBlockType> = ({ blocks, title }) => {
                             <button
                                 className={`${openedIndexes.includes(index) ? style.button_opened : style.button_closed}`}
                                 onClick={() => toggleBlock(index)}
+                                type='button'
                             >
                                 <svg
                                     className={style.vector}

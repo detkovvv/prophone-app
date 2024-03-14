@@ -37,7 +37,7 @@ export const Header: FC<HeaderType> = ({ ticker, menu }) => {
             </div>
             <div className={style.head}>
                 <Logo fill={fill} />
-                <button className={style.menu_button} onClick={handleToggleMenu}>
+                <button className={style.menu_button} onClick={handleToggleMenu} type='button'>
                     {opened ? (
                         <svg
                             fill='none'

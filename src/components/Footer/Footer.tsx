@@ -53,7 +53,9 @@ export const Footer: FC<FooterType> = ({ policies }) => {
                 </p>
             </div>
             <div className={style.button_container}>
-                <button className={style.button}>Read less</button>
+                <button className={style.button} type='button'>
+                    Read less
+                </button>
             </div>
             <div className={style.copyright}>© 2023 WhaleCo Inc.</div>
         </footer>
